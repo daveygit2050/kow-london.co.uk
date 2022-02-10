@@ -7,15 +7,15 @@
     <script src="//cdn.jsdelivr.net/npm/eruda"></script>
     <style>
       .map {
-        width: 100%;
-        height: 600px;
+        width: 100vw;
+        height: 100vh;
       }
     </style>
   </head>
   <body>
     <div id="map" class="map"></div>
     <script type="text/javascript">
-      eruda.init();
+      // eruda.init();
       ol.proj.useGeographic();
       const place = [-1.21, 52.9976600];
       const point = new ol.geom.Point(place);
