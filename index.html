@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Simple Map</title>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.12.0/build/ol.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
     <style>
       .map {
         width: 100%;
@@ -14,16 +15,31 @@
   <body>
     <div id="map" class="map"></div>
     <script type="text/javascript">
+      eruda.init();
+      ol.proj.useGeographic();
+      const place = [-1.21, 52.9976600];
+      const point = new ol.geom.Point(place);
       var map = new ol.Map({
         target: 'map',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
-          })
+          }),
+	  new ol.layer.Vector({
+            source: new ol.source.Vector({
+            features: [new ol.Feature(point)],
+            }),
+            style: new ol.style.Style({
+              image: new ol.style.Circle({
+                radius: 9,
+                fill: new ol.style.Fill({color: 'red'}),
+              }),
+            }),
+          }),
         ],
         view: new ol.View({
-          center: ol.proj.fromLonLat([-1.21, 52.9976600]),
-          zoom: 14
+          center: place,
+          zoom: 8
         })
       });
     </script>
