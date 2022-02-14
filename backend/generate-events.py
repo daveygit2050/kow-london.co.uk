@@ -17,7 +17,7 @@ def main():
     kow_masters_events_response = requests.get(f"{kow_masters_url}/index.php?p=events")
     kow_masters_events_soup = BeautifulSoup(kow_masters_events_response.text, 'html.parser')
     kow_masters_event_urls = [link.get('href') for link in kow_masters_events_soup.find_all('a') if "p=event&i=" in link.get('href')]
-    events = {}
+    venues = {}
     nominatim = Nominatim(user_agent="kow-london-backend")
     for kow_masters_event_url in kow_masters_event_urls:
         event_response = requests.get(f"{kow_masters_url}/{kow_masters_event_url}")
@@ -27,9 +27,12 @@ def main():
         parsed_url = urlparse(iframe.attrs["src"])
         postcode = parse_qs(parsed_url.query)["q"][0].strip()
         event_grid_ref = get_grid_ref_for_postcode(nominatim, postcode)
-        events[event_grid_ref] = {"name": event_name}
-    with open("events.json", "w") as outfile:
-        outfile.write(json.dumps(events, indent=2))
+        try:
+            venues[event_grid_ref]["events"].append({"name": event_name})
+        except KeyError:
+            venues[event_grid_ref] = {"events": [{"name": event_name}]}
+    with open("venues.json", "w") as outfile:
+        outfile.write(json.dumps(venues, indent=2))
 
 if __name__ == "__main__":
     main()

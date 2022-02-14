@@ -1,12 +1,27 @@
 @import "node_modules/ol/ol.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css";
 
 html, body {
   margin: 0;
   height: 100%;
 }
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.popover {
+  max-width: none;
+}
+
+.popover-body {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 0rem;
 }
