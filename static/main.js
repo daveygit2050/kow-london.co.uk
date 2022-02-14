@@ -7,29 +7,37 @@ import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer';
 import { useGeographic } from 'ol/proj';
 
 useGeographic();
-const place = [-1.21, 52.9976600];
-const point = new Point(place);
+
+const venues = {
+  "-1.21, 52.99766": { "name": "Mantic HQ"},
+  "-0.1704406, 51.325716": { "name": "Stane of Blood" }
+};
+
+var mapLayers = [new TileLayer({
+  source: new OSM()
+})];
+
+for (const [gridRef, details] of Object.entries(venues)) {
+  console.log("Adding venue at " + gridRef )
+  const point = new Point(getGridRefArray(gridRef));
+  mapLayers.push(new VectorLayer({
+    source: new VectorSource({
+      features: [new Feature(point)],
+    }),
+    style: new Style({
+      image: new Circle({
+        radius: 10,
+        fill: new Fill({ color: 'red' }),
+      }),
+    }),
+  }));
+}
 
 var map = new Map({
   target: 'map',
-  layers: [
-    new TileLayer({
-      source: new OSM()
-    }),
-    new VectorLayer({
-      source: new VectorSource({
-        features: [new Feature(point)],
-      }),
-      style: new Style({
-        image: new Circle({
-          radius: 12,
-          fill: new Fill({ color: 'red' }),
-        }),
-      }),
-    }),
-  ],
+  layers: mapLayers,
   view: new View({
-    center: place,
+    center: [-1.21, 52.99766], // Mantic HQ
     zoom: 8
   })
 });
@@ -44,8 +52,17 @@ const popup = new Overlay({
 });
 map.addOverlay(popup);
 
-function formatCoordinate(coordinate) {
-  return "Mantic HQ";
+function formatVenue(gridRefArray) {
+  return venues[getGridRefString(gridRefArray)].name;
+}
+
+function getGridRefArray(gridRefString) {
+  const gridRefStringArray = gridRefString.split(", ");
+  return [+(gridRefStringArray[0]), +(gridRefStringArray[1])];
+}
+
+function getGridRefString(gridRefArray) {
+  return `${gridRefArray[0]}, ${gridRefArray[1]}`
 }
 
 // const info = document.getElementById('info');
@@ -69,7 +86,7 @@ map.on('click', function (event) {
       container: element.parentElement,
       html: true,
       sanitize: false,
-      content: formatCoordinate(coordinate),
+      content: formatVenue(coordinate),
       placement: 'top',
     });
     $(element).popover('show');
