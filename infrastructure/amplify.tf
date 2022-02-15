@@ -1,5 +1,5 @@
 data "aws_ssm_parameter" "github_token" {
-  name = "/github.com/daveygit2050/tokens/amplify"
+  name = "/github.com/daveygit2050/tokens/kow-london-amplify"
 }
 
 resource "aws_amplify_app" "main" {
@@ -38,4 +38,19 @@ resource "aws_amplify_branch" "main" {
   app_id      = aws_amplify_app.main.id
   branch_name = "main"
   stage       = "PRODUCTION"
+}
+
+resource "aws_amplify_domain_association" "main" {
+  app_id      = aws_amplify_app.main.id
+  domain_name = "kow-london.co.uk"
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = ""
+  }
+
+  sub_domain {
+    branch_name = aws_amplify_branch.main.branch_name
+    prefix      = "www"
+  }
 }
