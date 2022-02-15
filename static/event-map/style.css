@@ -1,4 +1,4 @@
-@import "node_modules/ol/ol.css";
+@import "../node_modules/ol/ol.css";
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css";
 
 html, body {
