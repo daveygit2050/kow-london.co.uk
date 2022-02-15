@@ -1,5 +1,5 @@
 import './style.css';
-import { Circle, Fill, Style } from 'ol/style';
+import { Circle, Fill, Style, Text, Stroke } from 'ol/style';
 import { Feature, Map, Overlay, View } from 'ol/index';
 import { OSM, Vector as VectorSource } from 'ol/source';
 import { Point } from 'ol/geom';
@@ -182,7 +182,14 @@ for (const [gridRef, details] of Object.entries(venues)) {
     style: new Style({
       image: new Circle({
         radius: 10,
-        fill: new Fill({ color: 'red' }),
+        fill: new Fill({ color: [255, 248, 220] }),
+        stroke: new Stroke(),
+      }),
+      text: new Text({
+        font: "bold 12px sans-serif",
+        fill: new Fill({ color: [0, 0, 0] }),
+        offsetY: 1,
+        text: `${details.events.length}`,
       }),
     }),
   }));
