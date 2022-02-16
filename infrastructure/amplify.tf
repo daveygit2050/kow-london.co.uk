@@ -4,7 +4,7 @@ data "aws_ssm_parameter" "github_token" {
 
 resource "aws_amplify_app" "main" {
   name       = local.app_name
-  repository = "https://github.com/daveygit2050/kow.london"
+  repository = "https://github.com/daveygit2050/kow-london.co.uk"
 
   build_spec = <<-EOT
     version: 1
