@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,24 +10,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-                <span class="fs-4">Kings of War London</span>
-            </a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kings of War London</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#where-we-play">Where we play</a>
+                    <a class="nav-link" href="./event-map/">UK event map</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="./event-map/" class="nav-link">UK Event Map</a></li>
-            </ul>
-        </header>
+    <div class="container">
+        <h1>Kings of War London</h1>
+        <p>Welcome to the home of Kings of War in London.</p>
     </div>
 
-    <div class="container">
-        <p>Welcome to the home of Kings of War in London.</p>
+    <div class="container" id="where-we-play">
+        <h2>Where we play</h2>
+        <p>Members of the Kings of War London communinty are known to frequent the following clubs:</p>
+
+        <h3>Sutton Templars</h3>
+        <p>A club in Sutton that meet on Mondays.</p>
     </div>
 </body>
 
