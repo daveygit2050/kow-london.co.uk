@@ -36,7 +36,7 @@ def main():
             venues[event_grid_ref]["events"].append({"name": event_name})
         except KeyError:
             venues[event_grid_ref] = {"events": [{"name": event_name}]}
-    with open("venues.json", "w") as outfile:
+    with open("../static/event-map/venues.json", "w") as outfile:
         outfile.write(json.dumps(venues, indent=2))
 
 if __name__ == "__main__":
