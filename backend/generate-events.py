@@ -20,11 +20,16 @@ def main():
     venues = {}
     nominatim = Nominatim(user_agent="kow-london-backend")
     for kow_masters_event_url in kow_masters_event_urls:
-        event_response = requests.get(f"{kow_masters_url}/{kow_masters_event_url}")
+        full_event_url = f"{kow_masters_url}/{kow_masters_event_url}"
+        event_response = requests.get(full_event_url)
         kow_masters_event_soup = BeautifulSoup(event_response.text, 'html.parser')
         event_name = kow_masters_event_soup.find("h1").text.strip()
         iframe = kow_masters_event_soup.find(id="mapcanvas")
-        parsed_url = urlparse(iframe.attrs["src"])
+        try:
+            parsed_url = urlparse(iframe.attrs["src"])
+        except AttributeError:
+            print(f"No map found for event {full_event_url}")
+            continue
         postcode = parse_qs(parsed_url.query)["q"][0].strip()
         event_grid_ref = get_grid_ref_for_postcode(nominatim, postcode)
         try:
