@@ -10,3 +10,5 @@
 * add map summary to where we play
 * can we stop the headers from sliding under the navbar when using inter-page links?
 * move the UK event map link to a "tools" section
+* search engine optimisation
+* regularly update the event map
