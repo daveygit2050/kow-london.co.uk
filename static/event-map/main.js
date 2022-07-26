@@ -9,137 +9,41 @@ import { useGeographic } from 'ol/proj';
 useGeographic();
 
 const venues = {
-  "-1.207636751927884, 52.998202635714286": {
+  "-1.2076367142857143, 52.99820261428572": {
     "events": [
       {
-        "name": "Kids of War! - Kings of War Juniors"
-      },
-      {
-        "name": "Clocks of War"
-      },
-      {
-        "name": "GrotCon"
-      },
-      {
-        "name": "Clash of Kings Doubles"
+        "name": "Enter The Fray - 3"
       }
     ]
   },
-  "-0.7519496, 51.6314081": {
+  "-1.3188274, 52.0354758": {
     "events": [
       {
-        "name": "Throne of Ages 2022"
-      },
-      {
-        "name": "The Southern Crown II"
-      },
-      {
-        "name": "Unbroken Oaths"
+        "name": "The Pride of the Shire"
       }
     ]
   },
-  "-1.665849975, 53.81729505": {
+  "-4.15367, 50.37024": {
     "events": [
       {
-        "name": "Leodis Bash 2022"
+        "name": "Plymouth Pirates 2"
       }
     ]
   },
-  "-1.99111, 50.73811": {
-    "events": [
-      {
-        "name": "Explode-a-Con: March to War"
-      },
-      {
-        "name": "Entoyment - Easter Endurance"
-      },
-      {
-        "name": "Warborne 2022"
-      },
-      {
-        "name": "Entoyment - Slay Bells Ring"
-      }
-    ]
-  },
-  "-2.7095, 53.77466": {
-    "events": [
-      {
-        "name": "Easter Beaster"
-      }
-    ]
-  },
-  "-2.51603, 52.699": {
-    "events": [
-      {
-        "name": "Rift Wars 22: Spring"
-      }
-    ]
-  },
-  "-3.9393794, 56.1240295": {
-    "events": [
-      {
-        "name": "King beyond the wall 7: The Wildlings GT"
-      }
-    ]
-  },
-  "-0.28374, 51.66798": {
-    "events": [
-      {
-        "name": "Kings of Herts X at The Pit"
-      }
-    ]
-  },
-  "-3.20003081426867, 51.47220274901428": {
-    "events": [
-      {
-        "name": "Clash of Kings Welsh Qualifier 2022"
-      }
-    ]
-  },
-  "0.14987444167088593, 51.44186635": {
-    "events": [
-      {
-        "name": "Shroud of the Reaper - Aces & 8s.... Dead Man's Hand"
-      },
-      {
-        "name": "Shroud of the Reaper - Clash of the Titans"
-      }
-    ]
-  },
-  "-0.45878109791520494, 51.771704575": {
-    "events": [
-      {
-        "name": "Kings of Herts XI - CoK SE Qualifier"
-      },
-      {
-        "name": "Kings of Herts XII"
-      }
-    ]
-  },
-  "-1.578262363011861, 53.67890943333333": {
-    "events": [
-      {
-        "name": "Northern Kings GT 2022"
-      }
-    ]
-  },
-  "-1.37817, 52.53923": {
-    "events": [
-      {
-        "name": "Dawn of War 2"
-      },
-      {
-        "name": "Dawn of War 3"
-      },
-      {
-        "name": "Dawn of War The Finale"
-      }
-    ]
-  },
-  "-1.1508377599211634, 52.957756919999994": {
+  "-1.1507952214285715, 52.95775353571429": {
     "events": [
       {
         "name": "Swords of Summer - God's Descend"
+      }
+    ]
+  },
+  "-3.200030766666667, 51.47220271666667": {
+    "events": [
+      {
+        "name": "Allies of inconvenience Kings of War Doubles 2022"
+      },
+      {
+        "name": "Clash at Cardiff Kings of War Singles 2022"
       }
     ]
   },
@@ -150,7 +54,54 @@ const venues = {
       }
     ]
   },
-  "-0.03420119273410058, 51.63167256666667": {
+  "0.1498744, 51.4418663": {
+    "events": [
+      {
+        "name": "Shroud of the Reaper - Clash of the Titans"
+      },
+      {
+        "name": "Shroud of the Reaper - Aces & 8s II"
+      },
+      {
+        "name": "Shroud of the Reaper - Slay Bells Ring II"
+      }
+    ]
+  },
+  "-2.51603, 52.699": {
+    "events": [
+      {
+        "name": "Rift Wars 22: Autumn"
+      }
+    ]
+  },
+  "-2.61087355, 51.41517815": {
+    "events": [
+      {
+        "name": "The Mean Squeaks of Bristol"
+      }
+    ]
+  },
+  "-1.3781699, 52.53923": {
+    "events": [
+      {
+        "name": "Dawn of War 3"
+      },
+      {
+        "name": "Dawn of War The Finale"
+      }
+    ]
+  },
+  "-1.99111, 50.73811": {
+    "events": [
+      {
+        "name": "Warborne 2022"
+      },
+      {
+        "name": "Entoyment - Slay Bells Ring"
+      }
+    ]
+  },
+  "-0.03420116666666667, 51.631672566666666": {
     "events": [
       {
         "name": "Speed Kings of War at LGT"
@@ -160,10 +111,78 @@ const venues = {
       }
     ]
   },
-  "-0.7621570470502979, 51.276581300000004": {
+  "-0.45878105, 51.77170455": {
+    "events": [
+      {
+        "name": "Kings of Herts XII"
+      }
+    ]
+  },
+  "-2.93939, 54.8942": {
+    "events": [
+      {
+        "name": "Vc Games Presents: Battles in the Undercroft"
+      }
+    ]
+  },
+  "-2.15192, 53.39552": {
+    "events": [
+      {
+        "name": "Cold Up North @ The Ribble Rumble"
+      }
+    ]
+  },
+  "-2.7094999, 53.77466": {
+    "events": [
+      {
+        "name": "Preston Pillage - The Marauders Return"
+      }
+    ]
+  },
+  "-1.9656434, 52.4605272": {
+    "events": [
+      {
+        "name": "The Second Birmingham Bullrun: Bullfight!"
+      }
+    ]
+  },
+  "-0.762157, 51.2765813": {
     "events": [
       {
         "name": "Kings of Warfare"
+      }
+    ]
+  },
+  "-0.7519496, 51.6314081": {
+    "events": [
+      {
+        "name": "Unbroken Oaths"
+      },
+      {
+        "name": "Southern Crown III"
+      }
+    ]
+  },
+  "-0.7524593, 51.6306991": {
+    "events": [
+      {
+        "name": "Throne of Ages 2023"
+      },
+      {
+        "name": "Magic and Mayhem"
+      },
+      {
+        "name": "Battle of Frost Peak"
+      }
+    ]
+  },
+  "-1.5782623333333334, 53.6789094": {
+    "events": [
+      {
+        "name": "The Northern Kings GT 2023"
+      },
+      {
+        "name": "The Winter War 2023"
       }
     ]
   }
