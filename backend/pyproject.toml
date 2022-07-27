@@ -6,7 +6,7 @@ authors = ["Dave Randall <19395688+daveygit2050@users.noreply.github.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "3.9.10"
+python = "3.7.10"
 geopy = "^2.2.0"
 beautifulsoup4 = "^4.10.0"
 requests = "^2.27.1"
