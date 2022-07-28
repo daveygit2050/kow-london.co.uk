@@ -8,14 +8,16 @@ from urllib.parse import parse_qs
 from urllib.parse import urlparse
 
 class Event:
-    def __init__(self, name, url):
+    def __init__(self, name, url, date):
         self.name = name
         self.url = url
+        self.date = date
 
     def get_json(self):
         return {
             "name": self.name,
             "url": self.url,
+            "date": self.date,
         }
 
 @tenacity.retry(retry=tenacity.retry_if_exception_type(IOError), wait=tenacity.wait_fixed(2))
@@ -35,6 +37,7 @@ def main():
         event_response = requests.get(full_event_url)
         kow_masters_event_soup = BeautifulSoup(event_response.text, 'html.parser')
         event_name = kow_masters_event_soup.find("h1").text.strip()
+        event_date = kow_masters_event_soup.find_all("table")[0].find_all("td")[1].text
         iframe = kow_masters_event_soup.find(id="mapcanvas")
         try:
             parsed_url = urlparse(iframe.attrs["src"])
@@ -43,7 +46,7 @@ def main():
             continue
         postcode = parse_qs(parsed_url.query)["q"][0].strip()
         event_grid_ref = get_grid_ref_for_postcode(nominatim, postcode)
-        event = Event(name=event_name, url=full_event_url)
+        event = Event(name=event_name, url=full_event_url, date=event_date)
         try:
             venues[event_grid_ref]["events"].append(event.get_json())
         except KeyError:

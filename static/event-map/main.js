@@ -59,7 +59,7 @@ function formatVenue(gridRefArray) {
   const venue = venues[getGridRefString(gridRefArray)]
   var rows = []
   for (const [key, value] of Object.entries(venue.events)) {
-    rows.push(`<p><a href="${value.url}" target="_blank">${value.name}</a></p>`)
+    rows.push(`<p>${value.date} - <a href="${value.url}" target="_blank">${value.name}</a></p>`)
   }
   return rows.join("")
 }
