@@ -7,6 +7,17 @@ from geopy.geocoders import Nominatim
 from urllib.parse import parse_qs
 from urllib.parse import urlparse
 
+class Event:
+    def __init__(self, name, url):
+        self.name = name
+        self.url = url
+
+    def get_json(self):
+        return {
+            "name": self.name,
+            "url": self.url,
+        }
+
 @tenacity.retry(retry=tenacity.retry_if_exception_type(IOError), wait=tenacity.wait_fixed(2))
 def get_grid_ref_for_postcode(nominatim, postcode):
     location = nominatim.geocode(f"{postcode}, United Kingdom")
@@ -32,10 +43,11 @@ def main():
             continue
         postcode = parse_qs(parsed_url.query)["q"][0].strip()
         event_grid_ref = get_grid_ref_for_postcode(nominatim, postcode)
+        event = Event(name=event_name, url=full_event_url)
         try:
-            venues[event_grid_ref]["events"].append({"name": event_name})
+            venues[event_grid_ref]["events"].append(event.get_json())
         except KeyError:
-            venues[event_grid_ref] = {"events": [{"name": event_name}]}
+            venues[event_grid_ref] = {"events": [event.get_json()]}
     with open("../static/event-map/venues.json", "w") as outfile:
         outfile.write(json.dumps(venues, indent=2))
 

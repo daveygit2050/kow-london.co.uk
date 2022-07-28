@@ -59,7 +59,7 @@ function formatVenue(gridRefArray) {
   const venue = venues[getGridRefString(gridRefArray)]
   var rows = []
   for (const [key, value] of Object.entries(venue.events)) {
-    rows.push(`<p>${value.name}</p>`)
+    rows.push(`<p><a href="${value.url}" target="_blank">${value.name}</a></p>`)
   }
   return rows.join("")
 }
@@ -73,24 +73,34 @@ function getGridRefString(gridRefArray) {
   return `${gridRefArray[0]}, ${gridRefArray[1]}`
 }
 
-map.on('click', function (event) {
-  $(element).popover('dispose');
+var clicked_map_pixel;
+var clicked_map_coordinate;
 
-  const feature = map.getFeaturesAtPixel(event.pixel)[0];
-  if (feature) {
-    const coordinate = feature.getGeometry().getCoordinates();
-    popup.setPosition([
-      coordinate[0] + Math.round(event.coordinate[0] / 360) * 360,
-      coordinate[1],
-    ]);
-    $(element).popover({
-      container: element.parentElement,
-      html: true,
-      sanitize: false,
-      content: formatVenue(coordinate),
-      placement: 'top',
-    });
-    $(element).popover('show');
+map.on('click', function (event) {
+  clicked_map_pixel = event.pixel;
+  clicked_map_coordinate = event.coordinate;
+})
+
+document.addEventListener("click", function (event) {
+  if (event.target.nodeName.toLowerCase() != 'a') {
+    $(element).popover('dispose');
+    const feature = map.getFeaturesAtPixel(clicked_map_pixel)[0];
+    if (feature) {
+      $(element).popover('dispose');
+      const coordinate = feature.getGeometry().getCoordinates();
+      popup.setPosition([
+        coordinate[0] + Math.round(clicked_map_coordinate[0] / 360) * 360,
+        coordinate[1],
+      ]);
+      $(element).popover({
+        container: element.parentElement,
+        html: true,
+        sanitize: false,
+        content: formatVenue(coordinate),
+        placement: 'top',
+      });
+      $(element).popover('show');
+    }
   }
 });
 
