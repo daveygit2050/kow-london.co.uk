@@ -11,4 +11,9 @@
 * can we stop the headers from sliding under the navbar when using inter-page links?
 * move the UK event map link to a "tools" section
 * search engine optimisation
+* header button doesn't work on mobile
+* report that map doesn't work on chrome on MacOS
+
+## Done
+
 * regularly update the event map
