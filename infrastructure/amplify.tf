@@ -12,13 +12,7 @@ resource "aws_amplify_app" "main" {
       phases:
         build:
           commands:
-          - cd backend
-          - python3 --version
-          - python3 -m pip install poetry
-          - poetry install
-          - poetry run python3 ./generate-events.py
-          - cd ../static
-          - rm -rf node_modules
+          - cd static
           - npm install
           - npm run build
       artifacts:

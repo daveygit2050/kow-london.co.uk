@@ -15,8 +15,9 @@
 * daily updates for the event map
 
 ## In Progress
-* header button doesn't work on mobile
+
 
 ## Done
 
 * regularly update the event map
+* header button doesn't work on mobile
