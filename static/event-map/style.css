@@ -1,5 +1,5 @@
 @import "../node_modules/ol/ol.css";
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 html, body {
   margin: 0;
