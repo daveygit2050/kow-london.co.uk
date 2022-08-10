@@ -86,7 +86,6 @@ document.addEventListener("click", function (event) {
     $(element).popover('dispose');
     const feature = map.getFeaturesAtPixel(clicked_map_pixel)[0];
     if (feature) {
-      $(element).popover('dispose');
       const coordinate = feature.getGeometry().getCoordinates();
       popup.setPosition([
         coordinate[0] + Math.round(clicked_map_coordinate[0] / 360) * 360,
