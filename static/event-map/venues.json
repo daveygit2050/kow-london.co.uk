@@ -1,40 +1,4 @@
 {
-  "-1.2076367142857143, 52.99820261428572": {
-    "events": [
-      {
-        "name": "Enter The Fray - 3",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=253",
-        "date": "30th July 2022"
-      }
-    ]
-  },
-  "-1.3188274, 52.0354758": {
-    "events": [
-      {
-        "name": "The Pride of the Shire",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=251",
-        "date": "31st July 2022"
-      }
-    ]
-  },
-  "-4.15367, 50.37024": {
-    "events": [
-      {
-        "name": "Plymouth Pirates 2",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=272",
-        "date": "6th August 2022"
-      }
-    ]
-  },
-  "-1.1507952214285715, 52.95775353571429": {
-    "events": [
-      {
-        "name": "Swords of Summer - God's Descend",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=225",
-        "date": "13th August 2022"
-      }
-    ]
-  },
   "-3.200030766666667, 51.47220271666667": {
     "events": [
       {
@@ -46,6 +10,15 @@
         "name": "Clash at Cardiff Kings of War Singles 2022",
         "url": "https://www.kowmasters.com/index.php?p=event&i=269",
         "date": "14th August 2022"
+      }
+    ]
+  },
+  "-1.150795842857143, 52.95775375": {
+    "events": [
+      {
+        "name": "Swords of Summer - God's Descend",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=225",
+        "date": "13th August 2022"
       }
     ]
   },
@@ -86,15 +59,6 @@
       }
     ]
   },
-  "-2.61087355, 51.41517815": {
-    "events": [
-      {
-        "name": "The Mean Squeaks of Bristol",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=255",
-        "date": "17th September 2022"
-      }
-    ]
-  },
   "-1.3781699, 52.53923": {
     "events": [
       {
@@ -106,6 +70,15 @@
         "name": "Dawn of War The Finale",
         "url": "https://www.kowmasters.com/index.php?p=event&i=239",
         "date": "26th November 2022"
+      }
+    ]
+  },
+  "-2.61087355, 51.41517815": {
+    "events": [
+      {
+        "name": "The Mean Squeaks of Bristol",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=255",
+        "date": "17th September 2022"
       }
     ]
   },
