@@ -23,7 +23,7 @@ Static site resources, including html, css and js files are stored in the [stati
 
 To install dependencies to the [static/node_modules](./static/node_modules) directory:
 
-    npm init
+    npm install
 
 To run a [local development server](http://localhost:3000):
 
