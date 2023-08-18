@@ -1,195 +1,111 @@
 {
-  "-3.200030766666667, 51.47220271666667": {
+  "-0.21869126666666666, 51.50360883333333": {
     "events": [
       {
-        "name": "Allies of inconvenience Kings of War Doubles 2022",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=268",
-        "date": "13th August 2022"
-      },
-      {
-        "name": "Clash at Cardiff Kings of War Singles 2022",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=269",
-        "date": "14th August 2022"
+        "name": "Roll Out The Doubles Barrells",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=290",
+        "date": "5th August 2023"
       }
     ]
   },
   "-1.150795842857143, 52.95775375": {
     "events": [
       {
-        "name": "Swords of Summer - God's Descend",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=225",
-        "date": "13th August 2022"
+        "name": "Britcon : Swords of Summer III",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=303",
+        "date": "12th August 2023"
       }
     ]
   },
-  "-1.24032, 52.78608": {
+  "-2.2525285, 51.8623061": {
     "events": [
       {
-        "name": "Battle Masters 2022",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=218",
-        "date": "20th August 2022"
+        "name": "Battle for the Dwarven Ale August 23",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=331",
+        "date": "19th August 2023"
       }
     ]
   },
-  "0.1498744, 51.4418663": {
+  "-1.6333792666666667, 52.80408736666667": {
     "events": [
       {
-        "name": "Shroud of the Reaper - Clash of the Titans",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=204",
-        "date": "3rd September 2022"
+        "name": "A Darkness Rising",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=322",
+        "date": "26th August 2023"
       },
       {
-        "name": "Shroud of the Reaper - Aces & 8s II",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=267",
-        "date": "6th May 2023"
+        "name": "Hunt for the Obsidian Crown",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=323",
+        "date": "25th November 2023"
       },
       {
-        "name": "Shroud of the Reaper - Slay Bells Ring II",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=271",
-        "date": "3rd December 2023"
+        "name": "Mantic Madness - Light the Beacons",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=324",
+        "date": "30th March 2024"
       }
     ]
   },
-  "-2.51603, 52.699": {
+  "-1.1549397333333333, 52.95845321666667": {
     "events": [
       {
-        "name": "Rift Wars 22: Autumn",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=273",
-        "date": "11th September 2022"
+        "name": "Clash of Kings UK 2023",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=301",
+        "date": "9th September 2023"
       }
     ]
   },
-  "-1.3781699, 52.53923": {
+  "-0.035126775, 51.631886625": {
     "events": [
       {
-        "name": "Dawn of War 3",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=238",
-        "date": "17th September 2022"
+        "name": "Kings of War at the LGT",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=340",
+        "date": "30th September 2023"
+      }
+    ]
+  },
+  "-1.1368522, 52.9544012": {
+    "events": [
+      {
+        "name": "Gamers For Life",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=338",
+        "date": "7th October 2023"
       },
       {
-        "name": "Dawn of War The Finale",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=239",
-        "date": "26th November 2022"
-      }
-    ]
-  },
-  "-2.61087355, 51.41517815": {
-    "events": [
-      {
-        "name": "The Mean Squeaks of Bristol",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=255",
-        "date": "17th September 2022"
-      }
-    ]
-  },
-  "-1.99111, 50.73811": {
-    "events": [
-      {
-        "name": "Warborne 2022",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=241",
-        "date": "24th September 2022"
-      },
-      {
-        "name": "Entoyment - Slay Bells Ring",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=240",
-        "date": "3rd December 2022"
-      }
-    ]
-  },
-  "-0.03420116666666667, 51.631672566666666": {
-    "events": [
-      {
-        "name": "Speed Kings of War at LGT",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=219",
-        "date": "30th September 2022"
-      },
-      {
-        "name": "Clash of Kings 22",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=231",
-        "date": "1st October 2022"
-      }
-    ]
-  },
-  "-0.45878105, 51.77170455": {
-    "events": [
-      {
-        "name": "Kings of Herts XII",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=223",
-        "date": "15th October 2022"
-      }
-    ]
-  },
-  "-2.93939, 54.8942": {
-    "events": [
-      {
-        "name": "Vc Games Presents: Battles in the Undercroft",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=260",
-        "date": "15th October 2022"
+        "name": "UK Masters for Season 2023",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=330",
+        "date": "27th January 2024"
       }
     ]
   },
   "-2.15192, 53.39552": {
     "events": [
       {
-        "name": "Cold Up North @ The Ribble Rumble",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=245",
-        "date": "22nd October 2022"
+        "name": "The War up North",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=302",
+        "date": "7th October 2023"
       }
     ]
   },
-  "-2.7094999, 53.77466": {
+  "-2.61087355, 51.41517815": {
     "events": [
       {
-        "name": "Preston Pillage - The Marauders Return",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=256",
-        "date": "5th November 2022"
+        "name": "The Mean Squeaks of Bristol 23",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=339",
+        "date": "14th October 2023"
       }
     ]
   },
   "-1.9656434, 52.4605272": {
     "events": [
       {
-        "name": "The Second Birmingham Bullrun: Bullfight!",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=257",
-        "date": "6th November 2022"
-      }
-    ]
-  },
-  "-0.762157, 51.2765813": {
-    "events": [
-      {
-        "name": "Kings of Warfare",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=229",
-        "date": "12th November 2022"
-      }
-    ]
-  },
-  "-0.7519496, 51.6314081": {
-    "events": [
-      {
-        "name": "Unbroken Oaths",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=244",
-        "date": "19th November 2022"
-      },
-      {
-        "name": "Southern Crown III",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=262",
-        "date": "1st July 2023"
+        "name": "FOURTH BIRMINGHAM BULLRUN",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=317",
+        "date": "4th November 2023"
       }
     ]
   },
   "-0.7524593, 51.6306991": {
     "events": [
-      {
-        "name": "Throne of Ages 2023",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=261",
-        "date": "11th February 2023"
-      },
-      {
-        "name": "Magic and Mayhem",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=265",
-        "date": "8th April 2023"
-      },
       {
         "name": "Battle of Frost Peak",
         "url": "https://www.kowmasters.com/index.php?p=event&i=266",
@@ -197,17 +113,132 @@
       }
     ]
   },
+  "-0.77024, 51.27295": {
+    "events": [
+      {
+        "name": "Kings of Warfare II",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=291",
+        "date": "11th November 2023"
+      }
+    ]
+  },
   "-1.5782623333333334, 53.6789094": {
     "events": [
       {
-        "name": "The Northern Kings GT 2023",
-        "url": "https://www.kowmasters.com/index.php?p=event&i=263",
-        "date": "20th May 2023"
+        "name": "Northern King Kon - Ambush",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=327",
+        "date": "24th November 2023"
       },
       {
-        "name": "The Winter War 2023",
+        "name": "Northern King Kon - Singles",
         "url": "https://www.kowmasters.com/index.php?p=event&i=270",
         "date": "25th November 2023"
+      },
+      {
+        "name": "Northern King Kon - Doubles",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=328",
+        "date": "26th November 2023"
+      }
+    ]
+  },
+  "0.1498744, 51.4418663": {
+    "events": [
+      {
+        "name": "Shroud of the Reaper - Slay Bells Ring II",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=271",
+        "date": "3rd December 2023"
+      },
+      {
+        "name": "Shroud of the Reaper - The Witch Hunter",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=332",
+        "date": "6th January 2024"
+      },
+      {
+        "name": "Shroud of the Reaper - A New Hope",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=333",
+        "date": "4th May 2024"
+      },
+      {
+        "name": "Shroud of the Reaper - Slay Bells Ring 3",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=334",
+        "date": "8th December 2024"
+      }
+    ]
+  },
+  "-1.4794, 53.3939": {
+    "events": [
+      {
+        "name": "TT Tournament Three It's Beginning To Look A Lot Like Zombies",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=329",
+        "date": "9th December 2023"
+      }
+    ]
+  },
+  "-1.99105, 50.73804": {
+    "events": [
+      {
+        "name": "Christmas Cracker - A Kings of War Tournament",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=325",
+        "date": "9th December 2023"
+      },
+      {
+        "name": "Easter Endurance",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=342",
+        "date": "20th April 2024"
+      }
+    ]
+  },
+  "-0.1704406, 51.3257164": {
+    "events": [
+      {
+        "name": "Stane of Blood 2024",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=341",
+        "date": "13th January 2024"
+      }
+    ]
+  },
+  "-1.8785318, 50.7163695": {
+    "events": [
+      {
+        "name": "Beachhead 2024",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=335",
+        "date": "11th February 2024"
+      }
+    ]
+  },
+  "-2.93939, 54.8942": {
+    "events": [
+      {
+        "name": "Battles in the Undercroft III",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=337",
+        "date": "27th April 2024"
+      }
+    ]
+  },
+  "-0.750324125, 51.628897475": {
+    "events": [
+      {
+        "name": "The Southern Crown IV",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=343",
+        "date": "29th June 2024"
+      }
+    ]
+  },
+  "-4.15377, 50.37037": {
+    "events": [
+      {
+        "name": "Golden Coast GT",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=336",
+        "date": "6th July 2024"
+      }
+    ]
+  },
+  "-0.762157, 51.2765813": {
+    "events": [
+      {
+        "name": "Kings of Warfare III",
+        "url": "https://www.kowmasters.com/index.php?p=event&i=326",
+        "date": "9th November 2024"
       }
     ]
   }
